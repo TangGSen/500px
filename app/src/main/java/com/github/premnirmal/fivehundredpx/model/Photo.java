@@ -69,7 +69,7 @@ public class Photo implements Parcelable {
     private static File storageDirectory() {
         if (directory == null) {
             directory = new File(Environment.getExternalStoragePublicDirectory(
-                    Environment.DIRECTORY_PICTURES), "500pxDownloader");
+                    Environment.DIRECTORY_DCIM), "500px");
             if (!directory.mkdirs()) {
                 Log.e(TAG, directory.getPath() + " directory exists or cannot be created!");
             }
